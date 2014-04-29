@@ -1,0 +1,259 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<link href="css/prettify-jPlayer.css" rel="stylesheet" type="text/css" />
+	<link href="css/jplayer.blue.monday.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.10.4/themes/smoothness/jquery-ui.css">
+    <link rel="stylesheet" href="css/custom.css">
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <script type="text/javascript" src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
+    <script type="text/javascript" src="js/groovyUI.js"></script>
+    <script type="text/javascript" src="js/themeswitcher.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.min.js"></script>
+	<script type="text/javascript" src="js/jquery.jplayer.inspector.js"></script>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="Rylan Gotto" content="">
+
+
+
+
+
+
+
+<script>
+$(document).ready(function(){    document.getElementById('audio_player').addEventListener('ended',myHandler,false);
+    function myHandler(e) {
+        if(!e) { e = window.event; }
+        alert("Video Finished");
+    }
+    })
+;
+</script>
+
+</script>
+</head>
+<body>
+
+
+
+<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+
+      </div>
+      <div class="collapse navbar-collapse">
+        <ul class="nav navbar-nav  pull-right">
+            <li><a  href="{%url 'home'    %}">Home </a></li>
+            <li><a  href="{%url 'blog'    %}">Blog </a></li>
+            <li><a  href="{%url 'projects'%}">Projects</a></li>
+        </ul>
+    </div>
+</div>
+      
+
+      <div class="col-lg-3 col-md-3  col-sm-6 col-xs-6 border" id="sidebar_container">
+                <ul  id="sortable">
+                </ul>
+      </div>
+    
+<div class="container content">
+      <div id="search_container" class="col-lg-9 col-md-9 col-sm-6 col-xs-6">
+          <div>
+              <span class="col-md-1"><button class="searchbox">Search</button></span>
+              <span class="col-md-1"><label  >Search: </label></span>
+              <span class="col-lg-6 col-md-6 col-sm-9 col-xs-9"><input class="searchbox"></span>
+          </div>
+  
+
+<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12"id="accordion">
+  <h3><strong>Grooveshark</strong></h3>
+<ul>
+    <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="test.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+
+        </div>
+    </li>
+            <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="gotux.jpg"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+       <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="tux-vader.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+</ul>
+  <h3><strong>Soundcloud</strong></h3>
+  <ul>
+    <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="gotux.jpg"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+    <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="test.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+            <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="tux-vader.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+
+</ul>
+  <h3><strong>Youtube</strong></h3>
+  <ul>
+    <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="tux-vader.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+        <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="gotux.jpg"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+            <li class="draggable musical" class="ui-state-highlight">
+        <div class="removable  music_tab">
+            <div class=" row">
+            <div class="col-md-3 col-sm-6 col-xs-6">
+            <span><img class="img-thumbnail img-responsive" src="test.png"></span>
+                </div>
+                <div class="col-md-3 col-sm-6 col-xs-6">
+            <p>Title:</p>
+            <p>Artist:</p>
+            <p>Album:</p>
+                </div>
+        </div>
+    </li>
+</ul>
+</div>
+</div>
+    </div>
+    
+    
+    
+    
+<div class="container" id="youtube_container">
+    <div class="col-md-offset-1">
+
+        </div>
+ </div>
+     
+    
+    
+    
+    
+</div>
+
+
+
+
+
+
+
+<div >
+  <div class="container">
+  
+
+		
+</div>
+<div id="wrap">
+
+</div>
+<div id="footer">
+
+<div class="row">
+
+    <div class="col-md-8 col-sm-8" id="player">
+
+        <audio controls="" autoplay="" name="media"><source src="http://stream126a-he.grooveshark.com/stream.php?streamKey=54d852386db21ab7652190c73822c9cec2c27841_535bf3cc_19d4641_1b963fe_126b3e3d7_1_0" type="audio/mpeg"></audio>
+        
+    </div>
+    <div id="now_playing" class="col-md-offset-1 col-sm-offset-1 col-sm-3 col-md-3"></div>
+</div>
+
+
+
+</body>
+</html>
